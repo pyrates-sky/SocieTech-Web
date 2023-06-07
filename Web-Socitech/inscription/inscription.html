@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/logo_img.svg">
+
+    <link rel="stylesheet" href="./inscription.css">
+    <!-- Google font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+    <!-- font Awesom links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- boostrp css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- boostrap js link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <title>S'inscrire</title>
+</head>
+<body>
+    <section class="signup_section">
+      <div class="form-center">
+        <!-- Element de Gauche -->
+        <div class="left">
+          <h1>S'inscrire</h1>
+          <p>S'inscrire avec ces comptes </p>
+
+          <div class="accounts">
+            <!-- boutton compte google -->
+            <div class="google_account account">
+              <a href="#"><img src="./img/google.png" alt="google_logo_img" width="25px">Continuer avec google</a>
+            </div>
+            <!-- boutton compte microsofte -->
+              <div class="microsoft_account account">
+                <a href="#"><img src="./img/microsoft.png" alt="microsoft_logo_img" width="25px">Continuer avec microsofts</a>
+              </div>
+          </div>
+
+          <!-- or de séparation -->
+          <div class="separator">
+            <hr>
+            <p>or</p>
+            <hr>
+          </div>
+
+          <!-- option de connexion -->
+          <div class="connexion_option">
+            <p><a href="../connexion/connexion.html">Connectez-vous</a><br> si vous avez déja un compte.</p>
+          </div>
+        </div>
+        <!-- Element de Gauche Fin -->
+
+        <!-- Element de Droite -->
+        <div class="right">
+          <form action="" class="form-group">
+            <div class="row g-3 mb-5">
+
+              <div class="col-md">
+                <div class="form-floating mb-3">
+                  <input type="text" name="firstName" id="firstName" placeholder=" " class="form-control">
+                  <label for="firstName">Nom</label>
+                  <div id="validationServer04Feedback" class="valid-feedback"></div>
+                </div>
+              </div>
+
+              <div class="col-md">
+                <div class="form-floating mb-3">
+                  <input type="text" name="lastName" id="lastName" placeholder=" " class="form-control">
+                  <label for="lastName">Prénoms</label>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating mb-3">
+                  <input type="email" name="e-mail" id="e-mail" placeholder=" " class="form-control">
+                  <label for="e-mail">E-mail</label>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row g-3 mb-5">
+
+              <div class="col-md">
+                <div class="form-floating mb-3">
+                  <input type="date" name="birthday" id="birthday" placeholder=" " class="form-control">
+                  <label for="birthday">Date de Naissance</label>
+                </div>
+              </div>
+
+              <div class="col-md">
+                <div class="form-floating mb-3">
+                  <input type="password" name="password" id="password" placeholder=" " class="form-control">
+                  <label for="password">Mot de passe</label>
+                </div>
+              </div>
+
+              <div class="col-md">
+                <div class="form-floating mb-3">
+                  <input type="password" class="form-control" name="password_verif" placeholder=" " id="password_verif">
+                  <label for="password_verif" class="mdp">Mot de passe à nouveau</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row g-3 mb-5">
+              
+              <div class="col-md">
+                <div class="form-check">
+                  <h5>Genre</h5>
+                  <div class="radios">
+
+                    <div class="radio">
+                      <input type="radio" name="genre" id="homme" class="form-check-input">
+                      <label for="homme">Homme</label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" name="genre" id="homme" class="form-check-input">
+                      <label for="homme">Femme</label>
+                    </div>
+                    <div class="radio">
+                      <input type="radio" name="genre" id="homme" class="form-check-input" required>
+                      <label for="homme">Autres</label>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md">
+                <div class="form-floating">
+                  <select name="pays" id="pays" class="form-select" >
+                    <option selected>Selectionnez votre pays</option>
+                    <option value="france">France</option>
+                    <option value="cote_d_ivoire">Côte d'Ivoire</option>
+                    <option value="mali">Mali</option>
+                    <option value="Senegal">Sénégal</option>
+                    <option value="gabon">Gabon</option>
+                    <option value="suisse">Suisse</option>
+                    <option value="australie">Australie</option>
+                    <option value="canada">Canada</option>
+                  </select>
+                  <label for="pays">Choix selection</label>
+                </div>
+              </div>
+
+              <div class="col-md">
+                <div class="form-floating">
+                  <select name="statut" id="statut" class="form-select">
+                    <option selected>Selectionnez votre statut</option>
+                    <option value="fournisseur">Fournisseur</option>
+                    <option value="client">Client</option>
+                    <option value="partenaires">Partenaires</option>
+                  </select>
+                  <label for="statut">Choix selection</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row-cols-2 g-2">
+              <div class="col">
+                <div class="col-md mb-3">
+                  <div class="input-group">
+                    <input type="file" name="file" id="file" class="form-control">
+                    <label class="input-group-text" for="file">Photo</label>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-check">
+                    <input type="checkbox" name="valid_condition" id="valid_condition" class="form-check-input" value="" required>
+                    <label for="valid_condition" class="form-check-label valid_condition">Acceptez les termes et conditions</label>
+                    
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md">
+                <button class="btn btn-primary" type="submit">S'inscrire</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Element de Droite Fin -->
+      </div>
+    </section>
+</body>
+</html>
